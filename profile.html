@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TeaSK - My Profile</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="myProfileStyle.css">
+    <link rel="icon" href="favicon.png">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="editUserInfoScript.js"></script>
+
+    <div id="main-wrapper">
+      <div id="profile-picture-wrapper">
+        <img src="profile.jpeg" class="img-circle" id="profile-pic" width="160" height="160">
+        <div id="edit-link">Edit</div>
+        <input type="file" id="my-file">
+      </div>
+
+      <div id="content-wrapper">
+        <div class="edit-button" onclick="editUserInfo(1)"></div>
+        <div id="user-info">
+          <div id="name-wrapper">Tux Pingu</div>
+          <input type="text" id="edit_name" value="">
+          <div id="email-wrapper">tux.pingu@info.uaic.ro</div>
+          <input type="text" id="edit_email" value="">
+        </div>
+
+
+        <div class="options" id="group_1">
+        <br>
+          <input type="button" id="Save" class="custom_btn" value="Save" onclick="save_edit(1)">
+          <input type="button" id="cancel" class="custom_btn" value="Cancel" onclick="cancel_edit(1)">
+        </div>
+
+        <br><hr>
+        <div class="edit-button" onclick="editUserInfo(2)"></div>
+
+        <div class="text-wrapper">Studies:</div>
+        <div id="studies-wrapper">Faculty of Computer Science "Alexandru Ioan Cuza"</div>
+        <input type="text" id="edit_studies" value="">
+
+        <br>
+        <div class="text-wrapper">City:</div>
+        <div id="city-wrapper">Iasi</div>
+        <input type="text" id="edit_city" value="">
+
+        
+         <div class="options" id="group_2">
+         <br>
+          <input type="button" id="Save" class="custom_btn" value="Save" onclick="save_edit(2)">
+          <input type="button" id="cancel" class="custom_btn" value="Cancel" onclick="cancel_edit(2)">
+        </div>
+
+        <br><hr>
+        <div class="edit-button" onclick="editUserInfo(3)"></div>
+        
+        <div class="text-wrapper">Birthdate:</div>
+        <div id="birthdate-wrapper">2017-04-22</div>
+        <input type="date" id="birthdate_picker" min="1950-01-01">
+
+        <br>
+        <div class="text-wrapper">Gender:</div>
+        <div id="gender-wrapper">Penguin</div>
+
+        <select id="gender_dropdown" class="form-control" >
+          <option id="g_Male">Male</option>
+          <option id="g_Female">Female</option>
+          <option id="g_Penguin">Penguin</option>
+          <option id="g_Unspecified">Unspecified</option>
+        </select>
+
+        <br>
+        <div class="text-wrapper">Phone Number:</div>
+        <div id="phone-wrapper">+4 0744 444 444</div>
+        <input type="text" id="edit_phone" value="">
+
+        
+         <div class="options" id="group_3">
+          <br>
+          <input type="button" id="Save" class="custom_btn" value="Save" onclick="save_edit(3)">
+          <input type="button" id="cancel" class="custom_btn" value="Cancel" onclick="cancel_edit(3)">
+        </div>
+
+        <br><hr>
+        <div class="edit-button" onclick="editUserInfo(4)"></div>
+        
+        <div class="text-wrapper">Accounts</div>
+        <br>
+        <div class="text-wrapper">Git:</div>
+        <div>
+          <a id="git-link-wrapper" href="http://www.github.com/adriana-chirila">http://www.github.com/adriana-chirila</a>
+        </div>
+        <input type="text" id="edit_git_link" value="">
+
+       
+         <div class="options" id="group_4">
+           <br>
+          <input type="button" id="Save" class="custom_btn" value="Save" onclick="save_edit(4)">
+          <input type="button" id="cancel" class="custom_btn" value="Cancel" onclick="cancel_edit(4)">
+        </div>
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

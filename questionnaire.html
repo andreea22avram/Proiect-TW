@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TeaSK - Questionnaire</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="questionnaireStyle.css">
+    <link rel="icon" href="favicon.png">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <div id="content-wrapper">
+      <img src="logo.png"">
+      <hr>
+      <div id="title-wrapper">Questionnaire</div>
+      <hr>
+      <div class="question-text">1. Select your top 3 programming languages:</div>
+      <dir class="question-content">
+        <table>
+        <tr>
+          <th></th>
+          <th>
+            <dir style="display: inline-block; float: left; margin: 0px; margin-left: -20px;">Beginner...</dir>
+            <div style="display: inline-block; float: right; ">...Expert</dir>
+          </th>
+        </tr>
+          <tr>
+            <td>
+              <select id="language1" class="language-select" >
+                <option disabled="disabled" selected="selected">Language #1</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>C#</option>
+                <option>Java</option>
+                <option>JavaScript</option>
+                <option>Perl</option>
+                <option>Python</option>
+                <option>Ruby</option>
+                <option>PHP</option>
+                <option>SQL</option>
+              </select>
+            </td>
+            <td>
+              <div class="experience_select">
+                <label><input type="radio" name="language1_radio">1</label>
+                <label><input type="radio" name="language1_radio">2</label>
+                <label><input type="radio" name="language1_radio">3</label>
+                <label><input type="radio" name="language1_radio">4</label>
+                <label><input type="radio" name="language1_radio">5</label>
+                <label><input type="radio" name="language1_radio">6</label>
+                <label><input type="radio" name="language1_radio">7</label>
+                <label><input type="radio" name="language1_radio">8</label>
+                <label><input type="radio" name="language1_radio">9</label>
+                <label><input type="radio" name="language1_radio">10</label>      
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select id="language2" class="language-select" >
+                <option disabled="disabled" selected="selected">Language #2</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>C#</option>
+                <option>Java</option>
+                <option>JavaScript</option>
+                <option>Perl</option>
+                <option>Python</option>
+                <option>Ruby</option>
+                <option>PHP</option>
+                <option>SQL</option>
+              </select>
+            </td>
+            <td>
+              <div class="experience_select">
+                <label><input type="radio" name="language2_radio">1</label>
+                <label><input type="radio" name="language2_radio">2</label>
+                <label><input type="radio" name="language2_radio">3</label>
+                <label><input type="radio" name="language2_radio">4</label>
+                <label><input type="radio" name="language2_radio">5</label>
+                <label><input type="radio" name="language2_radio">6</label>
+                <label><input type="radio" name="language2_radio">7</label>
+                <label><input type="radio" name="language2_radio">8</label>
+                <label><input type="radio" name="language2_radio">9</label>
+                <label><input type="radio" name="language2_radio">10</label>      
+              </div> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select id="language3" class="language-select" >
+                <option disabled="disabled" selected="selected">Language #3</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>C#</option>
+                <option>Java</option>
+                <option>JavaScript</option>
+                <option>Perl</option>
+                <option>Python</option>
+                <option>Ruby</option>
+                <option>PHP</option>
+                <option>SQL</option>
+              </select>
+            </td>
+            <td>
+              <div class="experience_select">
+                    <label><input type="radio" name="language3_radio">1</label>
+                    <label><input type="radio" name="language3_radio">2</label>
+                    <label><input type="radio" name="language3_radio">3</label>
+                    <label><input type="radio" name="language3_radio">4</label>
+                    <label><input type="radio" name="language3_radio">5</label>
+                    <label><input type="radio" name="language3_radio">6</label>
+                    <label><input type="radio" name="language3_radio">7</label>
+                    <label><input type="radio" name="language3_radio">8</label>
+                    <label><input type="radio" name="language3_radio">9</label>
+                    <label><input type="radio" name="language3_radio">10</label>      
+              </div>    
+            </td>
+          </tr>   
+        </table>
+      </dir>
+      <hr>
+      <div class="question-text">2. What type of events are you interested in?</div>
+      <div class="question-content">
+        <form>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">Seminar
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">Speeches
+          </label>
+        </form>
+      </div>
+
+      <hr>
+      <div class="question-text">3. Are you willing to travel to an event?</div>
+      <div class="question-content">
+        <label class="radio-inline"><input type="radio" name="travel_radio">Yes</label>
+        <label class="radio-inline"><input type="radio" name="travel_radio">No</label>
+      </div>
+
+      <input type="button" id="finish" class="custom_btn" value="Finish">
+    </div>
+
+
+  </body>
+</html>
