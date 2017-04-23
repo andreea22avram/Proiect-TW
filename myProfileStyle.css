@@ -260,3 +260,7 @@ input[type=date]:active{
   	font-size: 14px;
   	padding: 0;
 }
+footer{
+	text-align: center;
+	padding-bottom: 10px;
+}
